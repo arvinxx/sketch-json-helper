@@ -6,6 +6,7 @@
     "module": "commonjs",
     "outDir": "./lib",
     "sourceMap": true,
+    "declaration": true,
     "downlevelIteration": true,
     "resolveJsonModule": true,
     "noUnusedLocals": true,
