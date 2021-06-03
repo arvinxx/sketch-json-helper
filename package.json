@@ -1,37 +1,44 @@
 {
-  "name": "from-sketch-json",
-  "version": "0.1.1",
-  "description": "From Sketch JSON to Sketch Native Object",
+  "name": "sketch-json-helper",
+  "version": "0.0.0",
+  "description": "Sketch JSON helper to convert between Sketch JSON and Sketch Native Object",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arvinxx/from-sketch-json.git"
+    "url": "git+https://github.com/arvinxx/sketch-json-helper.git"
   },
   "keywords": [
     "sketch",
     "json"
   ],
   "author": "arvinxx",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arvinxx/from-sketch-json/issues"
+    "url": "https://github.com/arvinxx/sketch-json-helper/issues"
   },
-  "homepage": "https://github.com/arvinxx/from-sketch-json#readme",
+  "homepage": "https://github.com/arvinxx/sketch-json-helper#readme",
   "files": [
     "lib/**/*"
   ],
+  "dependencies": {
+    "cocoascript-types": "^0.0.8",
+    "sketch-internal-types": "^0.0.2"
+  },
   "devDependencies": {
-    "@sketch-hq/sketch-file-format-ts": "^5.1.1",
-    "@types/jest": "^26.0.4",
+    "@sketch-hq/sketch-file-format-ts": "^6.1.1",
+    "commitlint": "^12.0.1",
+    "commitlint-config-gitmoji": "^2.2.1",
+    "husky": "^4.3.8",
     "lint-staged": "^10.0.7",
-    "prettier": "^1.18.2",
-    "tslint": "^5.18.0",
-    "typescript": "^3.9.5",
-    "tslint-config-prettier": "^1.18.0"
+    "prettier": "^2.3.0",
+    "semantic-release": "^17.3.7",
+    "semantic-release-config-gitmoji": "^1.2.4",
+    "typescript": "^4.3.2"
   }
 }

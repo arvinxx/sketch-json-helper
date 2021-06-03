@@ -5,31 +5,35 @@
 const SKETCH_HIGHEST_COMPATIBLE_VERSION = '95';
 
 /**
- * transform Sketch JSON to Sketch Native Object
+ * Convert Sketch JSON to Sketch Native Object
  *
- * if there is any error then throw it
- * @param  json JSON 对象
+ * @param  sketchJSON Sketch JSON
  * @param {String} version
  */
 export const fromSJSON = (
-  json: JSON,
+  sketchJSON: JSON,
   version = SKETCH_HIGHEST_COMPATIBLE_VERSION
 ): any => {
-  const err = MOPointer.alloc().init();
   const unarchivedObjectFromDictionary =
-    // above v64
-    MSJSONDictionaryUnarchiver.unarchivedObjectFromDictionary_asVersion_corruptionDetected_error ||
-    // below v64
-    MSJSONDictionaryUnarchiver.unarchiveObjectFromDictionary_asVersion_corruptionDetected_error;
-  const decoded = unarchivedObjectFromDictionary(json, version, null, err);
-
-  if (err.value() !== null) {
-    console.error(err.value());
-    throw new Error(err.value());
-  }
+    MSJSONDictionaryUnarchiver.unarchivedObjectFromDictionary_asVersion_corruptionDetected_error;
+  const decoded = unarchivedObjectFromDictionary(
+    sketchJSON,
+    version,
+    null,
+    null
+  );
 
   const mutableClass = decoded.class().mutableClass();
   return mutableClass.alloc().initWithImmutableModelObject(decoded);
 };
 
-export default fromSJSON;
+export const toSJSON = (sketchObject): object | undefined => {
+  if (!sketchObject) {
+    return null;
+  }
+  const imm = sketchObject.immutableModelObject();
+
+  const data = MSJSONDataArchiver.archiveStringWithRootObject_error(imm, null);
+
+  return data ? JSON.parse(data) : data;
+};
