@@ -27,7 +27,13 @@ export const fromSJSON = (
   return mutableClass.alloc().initWithImmutableModelObject(decoded);
 };
 
-export const toSJSON = (sketchObject): object | undefined => {
+/**
+ * Convert Sketch Native Object to Sketch JSON
+ *
+ * @param  sketchJSON Sketch JSON
+ * @param {String} version
+ */
+export const toSJSON = (sketchObject): any | undefined => {
   if (!sketchObject) {
     return null;
   }
