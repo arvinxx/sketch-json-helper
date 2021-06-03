@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
