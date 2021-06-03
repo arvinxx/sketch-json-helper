@@ -1,7 +1,9 @@
 # Sketch JSON Helper
 
 
-[![NPM version][version-image]][version-url] [![Release CI][release-ci]][deploy-ci-url] [![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
+[![NPM version][version-image]][version-url] [![Release CI][release-ci]][deploy-ci-url]
+
+[![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
 
 
 a Sketch JSON helper to convert between Sketch JSON and Sketch Native Object
@@ -26,7 +28,7 @@ a Sketch JSON helper to convert between Sketch JSON and Sketch Native Object
 ### From Sketch JSON to Sketch Native Object
 
 ```typescript
-import { fromSJSON } from 'from-sketch-json';
+import { fromSJSON } from 'sketch-json-helper';
 
 const sketchObject = fromSJSON(sketchJSON); // sketchJSON should be a legal sketch json
 ```
@@ -34,7 +36,7 @@ const sketchObject = fromSJSON(sketchJSON); // sketchJSON should be a legal sket
 ### From Sketch Native Object to Sketch JSON
 
 ```typescript
-import { toSJSON } from 'from-sketch-json';
+import { toSJSON } from 'sketch-json-helper';
 
 const sketchJSON = toSJSON(sketchObject); // sketchObject should be a sketchObject
 ```
