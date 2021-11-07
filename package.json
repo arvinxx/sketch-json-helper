@@ -28,8 +28,8 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "cocoascript-types": "^0.0.8",
-    "sketch-internal-types": "^0.0.2"
+    "cocoascript-types": "latest",
+    "sketch-internal-types": "latest"
   },
   "devDependencies": {
     "@sketch-hq/sketch-file-format-ts": "^6.1.1",
