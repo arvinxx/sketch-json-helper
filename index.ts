@@ -3,6 +3,7 @@
  */
 // Internal Sketch Version (ex: 95 => v47 and below)
 const SKETCH_HIGHEST_COMPATIBLE_VERSION = '95';
+import { SketchFormat } from 'sketch-types';
 
 /**
  * Convert Sketch JSON to Sketch Native Object
@@ -30,12 +31,14 @@ export const fromSJSON = (
 /**
  * Convert Sketch Native Object to Sketch JSON
  *
- * @param  sketchJSON Sketch JSON
+ * @param layer
  */
-export const toSJSON = (sketchObject): any | undefined => {
-  if (!sketchObject) {
-    return null;
+export const toSJSON = (layer: any): SketchFormat.AnyObject | undefined => {
+  if (!layer) {
+    return;
   }
+  const sketchObject = layer.sketchObject ?? layer;
+
   const imm = sketchObject.immutableModelObject();
 
   const data = MSJSONDataArchiver.archiveStringWithRootObject_error(imm, null);

@@ -28,11 +28,9 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "cocoascript-types": "latest",
-    "sketch-internal-types": "latest"
+    "sketch-types": "latest"
   },
   "devDependencies": {
-    "@sketch-hq/sketch-file-format-ts": "^6.1.1",
     "commitlint": "^12.0.1",
     "commitlint-config-gitmoji": "^2.2.1",
     "husky": "^4.3.8",
