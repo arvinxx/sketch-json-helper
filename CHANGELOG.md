@@ -1,5 +1,18 @@
 # Changelog
 
+# [1.1.0](https://github.com/arvinxx/sketch-json-helper/compare/v1.0.2...v1.1.0) (2021-11-07)
+
+
+### ✨ Features
+
+* toSJSON 支持传入 Sketch JS 对象 ([c8249eb](https://github.com/arvinxx/sketch-json-helper/commit/c8249eb))
+
+
+### 🎫 Chores
+
+* 更新发版依赖 ([50c41e0](https://github.com/arvinxx/sketch-json-helper/commit/50c41e0))
+* 补充lock文件 ([871c170](https://github.com/arvinxx/sketch-json-helper/commit/871c170))
+
 ## [1.0.2](https://github.com/arvinxx/sketch-json-helper/compare/v1.0.1...v1.0.2) (2021-11-07)
 
 
