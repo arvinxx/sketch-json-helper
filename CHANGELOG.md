@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.1](https://github.com/arvinxx/sketch-json-helper/compare/v1.1.0...v1.1.1) (2023-01-08)
+
+
+### 🎫 Chores
+
+* **release**: v1.1.1-alpha.1 [skip ci] ([343cea5](https://github.com/arvinxx/sketch-json-helper/commit/343cea5))
+* **release**: v1.1.1-alpha.2 [skip ci] ([e0aae00](https://github.com/arvinxx/sketch-json-helper/commit/e0aae00))
+* 升级基础设施 ([5b3a894](https://github.com/arvinxx/sketch-json-helper/commit/5b3a894))
+
+
+### 👷 Build System
+
+* 修正构建配置，兼容老的构建工具 ([8675c37](https://github.com/arvinxx/sketch-json-helper/commit/8675c37))
+* 测试 father 构建结果 ([82b0dfa](https://github.com/arvinxx/sketch-json-helper/commit/82b0dfa))
+
 ## [1.1.1-alpha.2](https://github.com/arvinxx/sketch-json-helper/compare/v1.1.1-alpha.1...v1.1.1-alpha.2) (2023-01-08)
 
 
