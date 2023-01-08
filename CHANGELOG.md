@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1-alpha.2](https://github.com/arvinxx/sketch-json-helper/compare/v1.1.1-alpha.1...v1.1.1-alpha.2) (2023-01-08)
+
+
+### 👷 Build System
+
+* 修正构建配置，兼容老的构建工具 ([8675c37](https://github.com/arvinxx/sketch-json-helper/commit/8675c37))
+
 ## [1.1.1-alpha.1](https://github.com/arvinxx/sketch-json-helper/compare/v1.1.0...v1.1.1-alpha.1) (2023-01-08)
 
 
