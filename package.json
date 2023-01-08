@@ -2,35 +2,42 @@
   "name": "sketch-json-helper",
   "version": "1.1.0",
   "description": "Sketch JSON helper to convert between Sketch JSON and Sketch Native Object",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "release": "semantic-release",
-    "prepublishOnly": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arvinxx/sketch-json-helper.git"
-  },
   "keywords": [
     "sketch",
     "json"
   ],
-  "author": "arvinxx",
-  "license": "MIT",
+  "homepage": "https://github.com/arvinxx/sketch-json-helper#readme",
   "bugs": {
     "url": "https://github.com/arvinxx/sketch-json-helper/issues"
   },
-  "homepage": "https://github.com/arvinxx/sketch-json-helper#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/sketch-json-helper.git"
+  },
+  "license": "MIT",
+  "author": "arvinxx",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "lib/**/*"
+    "lib"
   ],
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "release": "semantic-release"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --parser=typescript --write"
+    ]
+  },
   "dependencies": {
     "sketch-types": "latest"
   },
   "devDependencies": {
+    "cocoascript-types": "^0.2",
     "commitlint": "^17",
     "commitlint-config-gitmoji": "^2",
     "father": "^4",
@@ -41,6 +48,7 @@
     "prettier-plugin-packagejson": "^2",
     "semantic-release": "^19",
     "semantic-release-config-gitmoji": "^1",
+    "sketch-internal-types": "^1",
     "typescript": "^4"
   }
 }
