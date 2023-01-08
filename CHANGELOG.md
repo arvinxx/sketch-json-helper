@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1-alpha.1](https://github.com/arvinxx/sketch-json-helper/compare/v1.1.0...v1.1.1-alpha.1) (2023-01-08)
+
+
+### 🎫 Chores
+
+* 升级基础设施 ([5b3a894](https://github.com/arvinxx/sketch-json-helper/commit/5b3a894))
+
+
+### 👷 Build System
+
+* 测试 father 构建结果 ([82b0dfa](https://github.com/arvinxx/sketch-json-helper/commit/82b0dfa))
+
 # [1.1.0](https://github.com/arvinxx/sketch-json-helper/compare/v1.0.2...v1.1.0) (2021-11-07)
 
 
